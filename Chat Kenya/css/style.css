@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins','sans-serif';
+}
+
+:root{
+  --bg-color-light-mode:#fffdfd;
+  --second-bg-color:#112e42;
+  --text-color:#ededed;
+  --main--color:#00abf0;
+}
+
+.light-mode {
+    background-color: var(--bg-color-light-mode);
+    color: black;
+}
+
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+/* Light Mode Styles */
+.light-mode .headernav{
+	position: fixed;
+	top: 0;
+	left: 0; 
+	width: 100%;
+	padding: 1rem 9%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	z-index: 100;
+	transition: .3s;
+	border-bottom: 2px Solid #112e42;
+
+}
+
+/* Dark Mode Styles */
+.dark-mode .headernav{
+	position: fixed;
+	top: 0;
+	left: 0; 
+	width: 100%;
+	padding: 1rem 9%;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	transition: .3s; 
+	border-bottom: 1px Solid black;
+
+}
+
+
+#modeToggle{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none; /* Remove the focus border */
+    /* Add any additional styles you want for your plain button */
+}
+  
+.headernav.sticky{
+	background: var(--bg-color);
+}
+  
+.light-mode .logo{
+	font-size: 1.5rem;
+	color: blue;
+	font-weight: 600;
+}
+
+.dark-mode .logo{
+	font-size: 1.5rem;
+	color: var(--text-color);
+	font-weight: 600;
+}
+  
+.light-mode .navbar a {
+	font-size: 1.0rem;
+	color:black;
+	font-weight: 100;
+	margin-left: 1.4rem;
+	transition: .3s;
+	text-decoration: none;
+}
+
+.dark-mode .navbar a {
+	font-size: 1.0rem;
+	color:var(--text-color);
+	font-weight: 100;
+	margin-left: 1.4rem;
+	transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main--color);
+}
+  
+#menu-icon {
+	font-size: 2.6rem;
+	color: var(--text-color);
+	cursor: pointer;
+	display: none;
+}
+  
+section{
+	min-height: 100vh;
+	padding: 7rem 9% 2rem;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+  
+.box {
+	width: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+  @media (max-width:1200px) {
+    html{
+      font-size: 55%;
+    }
+  }
+
+  @media (max-width:991px) {
+    .headernav{
+      padding: 2rem 4%;
+    }
+
+	body{
+		font-size: 16px;
+	}
+
+    section{
+      padding: 10rem  4% 2rem;
+    }
+    .home{   
+      padding: 0 4%;
+    }
+  
+    .footer{
+      padding: 2rem 4%;
+    }
+  }
+
+ 
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .headernav {
+      background: gray;
+    }
+
+	.box:first-child {
+		display: none; /* Hide the first box on small screens */
+	}
+
+	body{
+		font-size: 16px;
+	}
+    
+    #menu-icon {
+      display: block; /* Show the hamburger icon on smaller screens */
+    }
+    
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: -100%;
+      width: 100%;
+      padding: 1rem 4%;
+      background: var(--main--color);
+      box-shadow: #081b29;
+
+      transition: .25s ease;
+      transition-delay: .25s;
+    }
+	
+
+    .navbar.active{
+      left: 0;
+      transition-delay: 0;
+    }
+    
+    .navbar a {
+      display: block;
+	  font-size: 14px;
+      margin: 3rem 0;
+    }
+
+	.light-mode .navbar a {
+		display: block;
+		color: aqua;
+		font-size: 14px;
+		margin: 3rem 0;/* Add vertical spacing between the links */
+	  }
+
+	  
+    
+    
+  }
