@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+
+    <meta name="image-url" content="img/Kenyanflag.PNG">
+
+    <!-- <meta name="image-url" content="{{ $image_path->img }}">--> 
+
+
     <meta http-equiv="X-UA-Compatibile" content="IE-edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- ... (your existing head content) ... -->
-
-   
-
 </head>
 <body class="light-mode">
     
@@ -20,18 +21,34 @@
         <a href="#" class="logo">Chat Kenya</a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
-            <a href="" class="active">Home</a>
-            <a href="Contact.html">Contact</a>
-            <a href="">Qualification</a>
-            <a href="#portfolio">Potfolio</a>
+            <a href="">Profile</a>
+            <a href="Contact.html">Friends</a>
+            <a href="">Notification</a>
+            <a href="#portfolio">Messages</a>
             <a href="">Technologies</a>
             <a href="About.html">About</a>
             <a><button id="modeToggle" style="background: transparent;font-size:20px"><i class='bx bxs-moon' style='color:black'></i></button></a>
         </nav>
     </header>
 
-    <section class="post-body" id="post-body">
-        <div class="post-box" style="background-color: rgb(252, 68, 68);">
+   <!-- <section class="story" style="background-image: url('img/Kristel\ Logo.PNG'); background-repeat: no-repeat;
+    background-size: cover;width:100%">
+
+
+    <h1>Welcome To our club</h1>-->
+    
+
+    <section class="story" id="storySection" style="background-repeat: no-repeat; background-size: cover;width:100%">
+        <h1>Welcome To our club</h1>
+    </section>
+      
+     
+      
+      
+      
+
+    <div class="post-body" id="post-body">
+        <div class="post-box" style="background-color: rgb(32, 18, 218);">
             <div class="container">
                 <div class="box">
                     <h4># Trending</h4>
@@ -47,7 +64,21 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <script>
+        var previousWidth = window.innerWidth;
+    
+        function checkScreenWidthAndReload() {
+          var currentWidth = window.innerWidth;
+          if (currentWidth < previousWidth) {
+            location.reload();
+          }
+          previousWidth = currentWidth;
+        }
+    
+        window.addEventListener('resize', checkScreenWidthAndReload);
+    </script>
     
     <script src="js/script.js"></script>
 </body>
