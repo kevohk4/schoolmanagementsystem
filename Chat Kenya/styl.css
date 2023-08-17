@@ -1,0 +1,76 @@
+.login{
+    background-color: transparent;
+    align-content: center;
+    padding: 7rem 30% 2rem;
+
+
+}
+
+
+
+
+
+
+
+
+.content input[type="text"],[type="password"]
+{
+    border-bottom: 1px solid rgb(22, 20, 20);
+    background: transparent;
+    outline: none;
+    height: 25px;
+    color: black;
+    background-color: cornsilk;
+    font-size: 14px;
+}
+.content input[type="Submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    background: red;
+    color:white;
+    font-size: 18px;
+}
+.profile input[type="Submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    background: red;
+    color:white;
+    font-size: 18px;
+}
+.content input[type="file"]
+{
+   
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(235, 226, 226);
+    color:rgb(10, 10, 10);
+    font-size: 18px;
+}
+.content input[type="Submit"]:hover
+{
+    cursor: pointer;
+    background: green;
+    color: black;
+}
+.profile input[type="Submit"]:hover
+{
+    cursor: pointer;
+    background: green;
+    color: black;
+}
+textarea{
+    resize: none;
+}
+footer{
+    padding-top: 0px;
+    padding-left: 50px;
+    left:45px;
+ }

@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>Profile| E-Agritechs</title> 
+</head> 
+<body>
+     <header>
+     <div id="mainbox" onclick="openFunction()">&#9776;</div>
+     <div id="title"></h1>E-Agritechs</h1></div>
+     <div id="search"><a href=""><img src="img/bell.png" height="30px" width="30px"></a></div>
+     <div id="menu" class="sidemenu">
+     <a href="index.php">Home</a>
+     <a href="friends.php">Friends</a>
+     <a href="uppload.php">Upploads</a>
+     <a href="#">Gallery</a>
+     <a href="blog.php">Blog</a>
+     <a href="logout.php">Sign out</a>
+     <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+     <footer>
+            <p><a href="#"><img src="img/facebook.png"  width="30" height="30"></a>
+            <a href="#"><img src="img/likedin.PNG" width="30" height="30"></a>
+            <a href="#"><img src="img/twiter.PNG" width="30" height="30"></a>
+            <a href="#"><img src="img/youtube.PNG" width="30" height="30"></a></p>
+                <br>
+               <br>
+               <b>E-Agritechs &copy;2021 </br>
+                Powered by Kevoh softwares </b>   
+    </footer> 
+
+     </div>
+     <div id="session">
+     <p> </p>
+     <p>Logged in, <a href="">James</a>  </p>
+     </div>
+    </header>
+<br>
+
+<div class="profile">
+   
+      <p> <img src='' width='200px' height='200px'></p>
+        <br>
+      <b>Name: Kevin </b><br>
+
+      <b>Country : Kenya </b><br>
+      <b>Email : email@gmail.com </b><br>   
+      <div id=''><a href='message'>Edit profile</a></div>                                                               
+
+</div>
+
+<div class="content">
+         <div class="card">
+<div class="inner">
+
+        <p> <img src='' width='50px' height='50px'> Kevin Odhiambo </p>";
+        <img src='' width='370px' height='450px'>
+        <br>
+        <b> Who has been to Kenya </b>";
+        <br>
+        <br>
+        <b> Likes: 28  <a href='comments.php'> Comments: 36</a> <br>
+        <br><br>                                                                
+
+
+</div></div></div>
+</body>
+</html>
+
+<script type="text/javascript">
+function openFunction(){
+    document.getElementById("menu").style.width="300px";  
+    document.getElementById("mainbox").style.marginleft="200px";
+}
+function closeFunction(){
+    document.getElementById("menu").style.width="0px";
+    document.getElementById("mainbox").style.marginleft="0px";
+    document.getElementById("mainbox").innerHTML="&#9776;";
+    }
+</script>

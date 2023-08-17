@@ -1,0 +1,35 @@
+body{
+    margin: 10;
+    padding: 13;
+    background-color: white;
+    font-family: monospace;
+    font-size: 17px;
+}
+body a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    max-width: 400px;
+    text-align: center;
+    background-color: white;
+}
+.inner{
+    margin-top: 20px;
+    color:black;
+    text-align: left;
+    font-size: 14px;
+    padding: 17px;
+}
+
+.profile{
+    margin-left: 100px;
+    width: 300px;
+    height: 400px;
+    padding: 4px;
+}
+.profile img{
+    border-radius: 50%;
+}
