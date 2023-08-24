@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibile" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="light-mode">
+    
+    <!--header design-->
+    <header class="headernav">
+        <a href="/" class="logo">Tuchapiane</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+
+            
+                                            <a href="/post"><b>+ Post</b></a>
+                        <a href="http://127.0.0.1:8000/home">Profile</a>
+                        <a href="/friends">Friends</a>
+                        <a href="/messages">Messages</a>
+                        <a href="/notifications">Notification</a>
+                         
+                        <a id="navbarDropdown" class="username" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            Kevin Odhiambo
+                        </a>
+
+                        <a  href="http://127.0.0.1:8000/logout"
+                            onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                    Logout
+                        </a>
+
+                        <a><button id="modeToggle" style="background: transparent;font-size:20px"><i class='bx bxs-moon' style='color:black'></i></button></a>
+
+                        <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
+                            <input type="hidden" name="_token" value="0GDDSyzqtEwKxCKPig7LIjv7hLgpBZYkJPeUQKxp">                        </form>
+
+                    
+            
+        </nav>
+    </header>
+
+    <div class="container-box">
+        <div class="container">
+
+            <div class="box">
+                <h1 style="">Trending</h1>
+                <ol style="margin-left:35px">
+                    <li><a href="">Kenya</a></li>
+                    <li><a href="">Chelsea</a></li>
+                    <li><a href="">#HereWeGo</a></li>
+                    <li><a href="">Prime Minister Raila Odinga</a></li>
+                    <li><a href="">English Premier League</a></li>
+                    <li><a href="">Christiano Ronaldo</a></li>
+                    <li><a href="">Cabinet Secretary Health</a></li>
+                </ol>
+            </div>
+
+            <div class="box">
+
+                                      
+                            <div class="card">
+
+                                <a href="/user-profile">
+                                <div class="inner">
+                                        <p style="padding:10px;font-size:17px">Kevin Odhiambo<br>
+                                            <b style="font-size:11px">1 min ago</b>
+                                        </p>
+                                        
+                                            
+                                            <p style="display: inline-block; width: 70px; height: 50px;">
+                                                <i class='bx bxs-user-circle' style="font-size: 40px;"></i>
+                                            </p>
+                                                                                    
+                                </div></a>
+
+                                <a href="/post-slug" style="color:black">
+                
+                                     <!-- Check if there are images -->
+                                        <img src="http://127.0.0.1:8000/storage/64e6761572c10.jpg" style="width:100%"> 
+                                    
+                                    <p style="padding-left:10px;font-size:16px">We are happy to be here at this momment</p>
+                                  
+                                    <p style="padding-left:10px;font-size:17px;margin-top:5px;margin-bottom:10px;padding-bottom:10px">
+                                        <a href="/like-post">28 <i class='bx bxs-heart' style='color:blue'></i></a>
+                                        <span style="width: 30px"></span>
+                                        <a href="">12 <i class='bx bxs-comment-detail' style='color:green'></i></a>
+                                    </p>
+                                 
+                                </a>
+                                
+                            </div>
+                       
+                                      
+                            <div class="card">
+
+                                <a href="/user-profile">
+                                <div class="inner">
+                                        <p style="padding:10px;font-size:17px">Daniel Masaba<br>
+                                            <b style="font-size:11px">1 min ago</b>
+                                        </p>
+                                        
+                                            
+                                            <p style="display: inline-block; width: 70px; height: 50px;">
+                                                <i class='bx bxs-user-circle' style="font-size: 40px;"></i>
+                                            </p>
+                                                                                    
+                                </div></a>
+
+                                <a href="/post-slug" style="color:black">
+                
+                                     <!-- Check if there are images -->
+                                        <img src="http://127.0.0.1:8000/storage/64e756f999e5b.jpg" style="width:100%"> 
+                                    
+                                    <p style="padding-left:10px;font-size:16px">Hello there my people #Kevin Odhiambo</p>
+                                  
+                                    <p style="padding-left:10px;font-size:17px;margin-top:5px;margin-bottom:10px;padding-bottom:10px">
+                                        <a href="/like-post">28 <i class='bx bxs-heart' style='color:blue'></i></a>
+                                        <span style="width: 30px"></span>
+                                        <a href="">12 <i class='bx bxs-comment-detail' style='color:green'></i></a>
+                                    </p>
+                                 
+                                </a>
+                                
+                            </div>
+                       
+                                
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-desktop" style="background-color: blue; padding: 10px; position: absolute; bottom: 0; width: 100%; display: block;">
+        <h5 style="margin: 0; padding: 3px; color: white">
+            Copyright 2023 | <a href="#" style="color: white">Privacy</a> |
+            <a href="#" style="color: white">Terms and Conditions</a>
+        </h5>
+    </footer>
+
+    <footer id="footer-mobile" style="background-color: green; padding: 10px; position: absolute; bottom: 0; width: 100%; text-align: center; font-size: 26px; display: none;">
+        <a href="/" style="margin-right: 20px"><i class='bx bx-home' style='color: white;'> </i></a>
+        <a href="/mobile-trending" style="margin-right: 20px"><i class='bx bx-trending-up' style='color:white' > </i></a>
+        <a href="/post" style="margin-right: 20px"><i class='bx bxs-plus-square' style="color: white;"> </i></a>
+        <a href="#" style="margin-right: 20px"><i class='bx bxs-bell' style='color: white;'> </i></a>
+        <a href="#" style="margin-right: 20px"><i class='bx bxs-message' style='color: white;'> </i></a>
+        <a href="/user-profile" style="margin-right: 20px"><i class='bx bxs-user' style='color:white' > </i></a>
+    </footer>
+
+
+    <script src="http://127.0.0.1:8000/js/script.js"></script>
+
+
+</body>
+</html>
+  
+           
+
+            
+
+     

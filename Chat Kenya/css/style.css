@@ -56,7 +56,7 @@
 	left: 0; 
 	width: 100%;
 	padding: 1rem 9%;
-	background-color: black;
+	background-color: transparent;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -105,12 +105,10 @@
 
 .dark-mode .navbar a {
 	font-size: 1.0rem;
-	color:white;
-
+	color:var(--text-color);
 	font-weight: 100;
 	margin-left: 1.4rem;
 	transition: .3s;
-
 }
 
 .navbar a:hover,
@@ -124,10 +122,10 @@
 	cursor: pointer;
 	display: none;
 }
-
+  
 section{
-	min-height: 85vh;
-	padding: 5rem 9% 2rem;
+	min-height: 100vh;
+	padding: 7rem 9% 2rem;
 }
 
 .container {
@@ -140,29 +138,6 @@ section{
 	padding: 20px;
 	box-sizing: border-box;
 }
-
-.story{
-  display: flex;
-  justify-content: center;
-}
-
-.story .box {
-  width: 200px;
-  height: 300px;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border: 1px solid grey;
-}
-
-.story .box img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-
 
   @media (max-width:1200px) {
     html{
@@ -198,13 +173,13 @@ section{
       background: gray;
     }
 
-    .box:first-child {
-      display: none;
-    }
+	.box:first-child {
+		display: none; /* Hide the first box on small screens */
+	}
 
-    body{
-      font-size: 16px;
-    }
+	body{
+		font-size: 16px;
+	}
     
     #menu-icon {
       display: block; /* Show the hamburger icon on smaller screens */
@@ -216,7 +191,7 @@ section{
       left: -100%;
       width: 100%;
       padding: 1rem 4%;
-      background: blue;
+      background: var(--main--color);
       box-shadow: #081b29;
 
       transition: .25s ease;
@@ -237,7 +212,7 @@ section{
 
 	.light-mode .navbar a {
 		display: block;
-		color: white;
+		color: aqua;
 		font-size: 14px;
 		margin: 3rem 0;/* Add vertical spacing between the links */
 	  }

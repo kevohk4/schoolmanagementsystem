@@ -74,25 +74,3 @@
             }
         }
     });
-
-
-    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    var storySection = document.getElementById('storySection');
-    
-    function setBackgroundImage(imageUrl) {
-      if (width > 720) {
-        storySection.style.backgroundImage = "url('" + imageUrl + "')";
-      } else {
-        storySection.style.backgroundImage = "none";
-      }
-    }
-    
-    function fetchImageUrlFromMetaTag() {
-      var metaTag = document.querySelector('meta[name="image-url"]');
-      var imageUrl = metaTag.getAttribute('content');
-      setBackgroundImage(imageUrl);
-    }
-    
-    fetchImageUrlFromMetaTag();
-    window.addEventListener('resize', fetchImageUrlFromMetaTag);
-    
