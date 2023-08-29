@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibile" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=" http://127.0.0.1:8000/css/style.css">
+
+   
+
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="light-mode">
+    
+    <!--header design-->
+    <header class="headernav">
+        <a href="/" class="logo">Tuchapiane</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+                
+                        
+                                <a href="/post"><b>+ Post</b></a>
+                                <a href="http://127.0.0.1:8000/home">Profile</a>
+                                <a href="/friends">Friends</a>
+                                <a href="/messages">Messages</a>
+                                <a href="/notifications">Notification</a>
+                         
+                                <a id="navbarDropdown" class="username" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Kevin Odhiambo
+                                </a>
+
+                           
+                                    <a  href="http://127.0.0.1:8000/logout"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        Logout
+                                    </a>
+
+                                    <a><button id="modeToggle" style="background: transparent;font-size:20px"><i class='bx bxs-moon' style='color:black'></i></button></a>
+
+
+                                    <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
+                                        <input type="hidden" name="_token" value="1N2MH3xQwXzbyA93EGenTMKf8xEZ4RjKbhGXZNGp">                                    </form>
+
+                                    
+                                </div>
+                            </li>
+                                </nav>
+    </header>
+
+        <main class="py-4">
+            
+<div class="container-box">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box">
+                <div class="" style="background-color: white; border-radius: 2px; padding: 20px; margin-top: 2px; color: #333333; width: 100%;">
+                    <div style="display: flex; align-items: center;">
+                        <p><img src='' width='50px' height='50px' style='border-radius: 50%;'></p>
+                        <p>Raul Owino</p>
+                    </div>
+
+                    <div style="box-shadow: 0 4px 8px 0 rgba(81, 5, 223, 0.3); padding: 5px; display: flex; flex-direction: column; margin-bottom: 7px; margin-top: 7px;">
+                        <div style="background-color: blue; color: white; border-radius: 3px; padding: 5px; text-align: left; width: 100%;">
+                            <p>
+                                Remember, the comment section's design should align with your website's overall aesthetics and user experience. Take inspiration from existing websites with well-designed comment sections, but feel free to customize the design to suit your project's unique identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="" style="background-color: white; border-radius: 2px; padding: 20px; margin-top: 2px; color: #333333; width: 100%;">
+                    <div style="display: flex; align-items: center;">
+                        <p><img src='' width='50px' height='50px' style='border-radius: 50%;'></p>
+                        <p>Raul Owino</p>
+                    </div>
+
+                    <div style="box-shadow: 0 4px 8px 0 rgba(81, 5, 223, 0.3); padding: 5px; display: flex; flex-direction: column; margin-bottom: 7px; margin-top: 7px;">
+                        <div style="background-color: blue; color: white; border-radius: 3px; padding: 5px; text-align: left; width: 100%;">
+                            <p>
+                                    feel free to customize the design to suit your project's unique identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex;width:100%;margin:5%;border: 1px solid black;border-radius:5px">
+                <textarea style=" flex: 1; padding: 5px;" placeholder="Add a comment"></textarea>
+                <button style="background-color: green; width: 10%;">
+                    <i class='bx bx-send' style="color: white; font-size: 30px;"></i>
+                </button>
+            </div>
+
+           
+    </div>
+</div>
+
+
+
+
+
+    
+</body>
+</html>
+
+        </main>
+    </div>
+</body>
+</html>
