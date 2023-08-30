@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatibile" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="light-mode">
+    
+    <!--header design-->
+    <header class="headernav">
+        <a href="/" class="logo">Tuchapiane</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+
+                                                        <a href="/post"><b>+ Post</b></a>
+                        <a href="http://127.0.0.1:8000/home">Profile</a>
+                        <a href="/friends">Friends</a>
+                        <a href="/messages">Messages</a>
+                        <a href="/notifications">Notification</a>
+                        <a id="navbarDropdown" class="username" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            Kevin Odhiambo
+                        </a>
+                        <a  href="http://127.0.0.1:8000/logout"
+                            onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                    Logout
+                        </a>
+                        <a><button id="modeToggle" style="background: transparent;font-size:20px"><i class='bx bxs-moon' style='color:black'></i></button></a>
+                        <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
+                            <input type="hidden" name="_token" value="uveqJHiDG6L4SY5HcdIffUJGJQTLtHihlVtUqckA">                        </form>
+
+                                        </nav>
+    </header>
+
+    <div class="container-box">
+        <div class="container">
+            <div class="box">
+                <div class="" style="background-color:white;border-radius:2px;padding:20px;margin-top:20px">
+
+                    <form method="GET" action="">
+                        <div style="display: flex;align-content: center;padding-bottom:7px">
+                        <input type="text" name="query" placeholder="Search..." aria-label="Search" aria-describedby="search-addon"/>  
+                        <button type="submit">
+                            <i class='bx bx-search' style="color:white"></i>
+                        </button>                    
+                        </div>
+                    </form>
+                    
+                    <h1 style="color:black">Trending</h1>
+                    <ol style="margin-left:35px">
+                        <li><a href="">Kenya</a></li>
+                        <li><a href="">Chelsea</a></li>
+                        <li><a href="">#HereWeGo</a></li>
+                        <li><a href="">Prime Minister Raila Odinga</a></li>
+                        <li><a href="">English Premier League</a></li>
+                        <li><a href="">Christiano Ronaldo</a></li>
+                        <li><a href="">Cabinet Secretary Health</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            
+
+            <div class="box">
+
+                           
+
+    
+        
+    
+
+
+
+                            <div class="card">
+                                <a href="/user-profile/show/1">
+                                    <div class="inner">
+                                        <p style="padding:10px;font-size:17px">Kevin Odhiambo<br>
+                                            <b style="font-size:11px">6 days ago </b>
+                                        </p>
+                                        
+                                        
+                                        <p style="display: inline-block; width: 70px; height: 50px;">
+                                            <i class='bx bxs-user-circle' style="font-size: 40px;"></i>
+                                        </p>
+                                                                                
+                                    </div>
+                                </a>
+
+                                <a href="/post-slug" style="color:black">
+                
+                                     <!-- Check if there are images -->
+                                        <img src="http://127.0.0.1:8000/storage/64e6761572c10.jpg" style="width:100%"> 
+                                    
+                                  
+
+                                    <p style="padding-left:10px;font-size:16px">We are happy to be here at this momment</p>
+
+
+                                    <div class="like-comment">
+                                        <div class="box-1">
+                                            <p style="margin: 0;"> <a href="">4 Likes</a></p>
+                                        </div>
+                                        <div class="box-1">
+                                            <p>
+
+
+                                                                                            <form action="/unlike-post/1" enctype="multipart/form-data" method="post">
+                                                    <input type="hidden" name="_token" value="uveqJHiDG6L4SY5HcdIffUJGJQTLtHihlVtUqckA">                                                    <button style="background: none; border: none; margin: 0 10px;">
+                                                        <i class='bx bxs-like' style='color: red; font-size: 16px;' ></i>
+                                                    </button>
+                                                </form>
+                                            
+
+
+
+
+                                                
+                                            </p>
+
+                                        </div>
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+                                              
+                                                
+                                                <a href="/comments/1">
+                                                    5 Comments 
+                                                </a>
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+    
+                                                <a href="/share/1">
+                                                    <i class='bx bx-dots-vertical' style='color:black' ></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    
+                                </a>
+                                
+                            </div>
+
+                           
+
+    
+        
+    
+
+
+
+                            <div class="card">
+                                <a href="/user-profile/show/3">
+                                    <div class="inner">
+                                        <p style="padding:10px;font-size:17px">Daniel Masaba<br>
+                                            <b style="font-size:11px">6 days ago </b>
+                                        </p>
+                                        
+                                        
+                                        <p style="display: inline-block; width: 70px; height: 50px;">
+                                            <i class='bx bxs-user-circle' style="font-size: 40px;"></i>
+                                        </p>
+                                                                                
+                                    </div>
+                                </a>
+
+                                <a href="/post-slug" style="color:black">
+                
+                                     <!-- Check if there are images -->
+                                        <img src="http://127.0.0.1:8000/storage/64e756f999e5b.jpg" style="width:100%"> 
+                                    
+                                  
+
+                                    <p style="padding-left:10px;font-size:16px">Hello there my people #Kevin Odhiambo</p>
+
+
+                                    <div class="like-comment">
+                                        <div class="box-1">
+                                            <p style="margin: 0;"> <a href="">1 Likes</a></p>
+                                        </div>
+                                        <div class="box-1">
+                                            <p>
+
+
+                                                                                            <form action="/unlike-post/2" enctype="multipart/form-data" method="post">
+                                                    <input type="hidden" name="_token" value="uveqJHiDG6L4SY5HcdIffUJGJQTLtHihlVtUqckA">                                                    <button style="background: none; border: none; margin: 0 10px;">
+                                                        <i class='bx bxs-like' style='color: red; font-size: 16px;' ></i>
+                                                    </button>
+                                                </form>
+                                            
+
+
+
+
+                                                
+                                            </p>
+
+                                        </div>
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+                                              
+                                                
+                                                <a href="/comments/2">
+                                                    0 Comments 
+                                                </a>
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+    
+                                                <a href="/share/2">
+                                                    <i class='bx bx-dots-vertical' style='color:black' ></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    
+                                </a>
+                                
+                            </div>
+
+                           
+
+    
+        
+    
+
+
+
+                            <div class="card">
+                                <a href="/user-profile/show/1">
+                                    <div class="inner">
+                                        <p style="padding:10px;font-size:17px">Kevin Odhiambo<br>
+                                            <b style="font-size:11px">24 minutes ago </b>
+                                        </p>
+                                        
+                                        
+                                        <p style="display: inline-block; width: 70px; height: 50px;">
+                                            <i class='bx bxs-user-circle' style="font-size: 40px;"></i>
+                                        </p>
+                                                                                
+                                    </div>
+                                </a>
+
+                                <a href="/post-slug" style="color:black">
+                
+                                     <!-- Check if there are images -->
+                                        <img src="http://127.0.0.1:8000/storage/64ef986b90c8f.jpeg" style="width:100%"> 
+                                    
+                                  
+
+                                    <p style="padding-left:10px;font-size:16px">Former president Uhuru Kenyatta</p>
+
+
+                                    <div class="like-comment">
+                                        <div class="box-1">
+                                            <p style="margin: 0;"> <a href="">1 Likes</a></p>
+                                        </div>
+                                        <div class="box-1">
+                                            <p>
+
+
+                                                                                            <form action="/unlike-post/3" enctype="multipart/form-data" method="post">
+                                                    <input type="hidden" name="_token" value="uveqJHiDG6L4SY5HcdIffUJGJQTLtHihlVtUqckA">                                                    <button style="background: none; border: none; margin: 0 10px;">
+                                                        <i class='bx bxs-like' style='color: red; font-size: 16px;' ></i>
+                                                    </button>
+                                                </form>
+                                            
+
+
+
+
+                                                
+                                            </p>
+
+                                        </div>
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+                                              
+                                                
+                                                <a href="/comments/3">
+                                                    0 Comments 
+                                                </a>
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+    
+                                                <a href="/share/3">
+                                                    <i class='bx bx-dots-vertical' style='color:black' ></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    
+                                </a>
+                                
+                            </div>
+
+                           
+
+    
+        
+    
+
+
+
+                            <div class="card">
+                                <a href="/user-profile/show/1">
+                                    <div class="inner">
+                                        <p style="padding:10px;font-size:17px">Kevin Odhiambo<br>
+                                            <b style="font-size:11px">13 minutes ago </b>
+                                        </p>
+                                        
+                                        
+                                        <p style="display: inline-block; width: 70px; height: 50px;">
+                                            <i class='bx bxs-user-circle' style="font-size: 40px;"></i>
+                                        </p>
+                                                                                
+                                    </div>
+                                </a>
+
+                                <a href="/post-slug" style="color:black">
+                
+                                     <!-- Check if there are images -->
+                                        <img src="http://127.0.0.1:8000/storage/64ef9b29e1a4d.jpg" style="width:100%"> 
+                                    
+                                  
+
+                                    <p style="padding-left:10px;font-size:16px">Just vibes and nothing else. Chilling at the swimming pool</p>
+
+
+                                    <div class="like-comment">
+                                        <div class="box-1">
+                                            <p style="margin: 0;"> <a href="">1 Likes</a></p>
+                                        </div>
+                                        <div class="box-1">
+                                            <p>
+
+
+                                                                                            <form action="/unlike-post/4" enctype="multipart/form-data" method="post">
+                                                    <input type="hidden" name="_token" value="uveqJHiDG6L4SY5HcdIffUJGJQTLtHihlVtUqckA">                                                    <button style="background: none; border: none; margin: 0 10px;">
+                                                        <i class='bx bxs-like' style='color: red; font-size: 16px;' ></i>
+                                                    </button>
+                                                </form>
+                                            
+
+
+
+
+                                                
+                                            </p>
+
+                                        </div>
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+                                              
+                                                
+                                                <a href="/comments/4">
+                                                    0 Comments 
+                                                </a>
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="box-1">
+                                            <p style="margin: 0;">
+    
+                                                <a href="/share/4">
+                                                    <i class='bx bx-dots-vertical' style='color:black' ></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    
+                                </a>
+                                
+                            </div>
+
+                        
+
+
+
+
+
+
+
+         
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-desktop" style="background-color: blue; padding: 10px; position: absolute; bottom: 0; width: 100%; display: block;">
+        <h5 style="margin: 0; padding: 3px; color: white">
+            Copyright 2023 | <a href="#" style="color: white">Privacy</a> |
+            <a href="#" style="color: white">Terms and Conditions</a>
+        </h5>
+    </footer>
+
+    <footer id="footer-mobile" style="background-color: green; padding: 10px; position: absolute; bottom: 0; width: 100%; text-align: center; font-size: 26px; display: none;">
+        <a href="/" style="margin-right: 20px"><i class='bx bx-home' style='color: white;'> </i></a>
+        <a href="/mobile-trending" style="margin-right: 20px"><i class='bx bx-trending-up' style='color:white' > </i></a>
+        <a href="/post" style="margin-right: 20px"><i class='bx bxs-plus-square' style="color: white;"> </i></a>
+        <a href="#" style="margin-right: 20px"><i class='bx bxs-bell' style='color: white;'> </i></a>
+        <a href="#" style="margin-right: 20px"><i class='bx bxs-message' style='color: white;'> </i></a>
+        <a href="/user-profile" style="margin-right: 20px"><i class='bx bxs-user' style='color:white' > </i></a>
+    </footer>
+
+    <script src="http://127.0.0.1:8000/js/script.js"></script>
+</body>
+</html>   
