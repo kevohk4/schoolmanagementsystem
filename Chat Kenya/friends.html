@@ -29,7 +29,7 @@
                                 <a href="/notifications">Notification</a>
                          
                                 <a id="navbarDropdown" class="username" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Kevin Odhiambo
+                                    Tonny Joel
                                 </a>
 
                            
@@ -43,7 +43,7 @@
 
 
                                     <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
-                                        <input type="hidden" name="_token" value="gs7F8XPZYyNZ6dcpXbQW4Wj4eDclHoY0zIQfoLGL">                                    </form>
+                                        <input type="hidden" name="_token" value="dYd7ElueXsCj8V2ODqfezBalqH7VBhwjBw0mVS8b">                                    </form>
 
                                     
                                 </div>
@@ -60,61 +60,62 @@
                     <h4 style="padding-top:20px;margin-left">Find friends</h4>
 
                     <form method="GET" action="/find-friend">
-                        <div style="display: flex;align-content: center;padding-bottom:7px">
+                        <div style="display:flex;align-content:center;padding-bottom:7px">
                         <input type="text" placeholder="Find friends" name="query" placeholder="Search..." aria-label="Search" aria-describedby="search-addon"/>  
                         <button type="submit">
-                            <i class='bx bx-search'></i>
+                            <i class='bx bx-search' style='color:white'></i>
                         </button>                    
                         </div>
                     </form>
 
                     
-                    <div class="friend" style="box-shadow: 0 4px 8px 0 rgba(81, 5, 223, 0.3);padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:7px;margin-top:7px">
-                        <p><img src='' width='50px' height='50px' style='border-radius:50%;padding-bottom:20px'></p>
-                        <p style="width:50%"> Kevin Odhiambo</p>
-                        <p style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">Unfollow </p>
-                    </div>
+
+                    <form action="/add-friend/2"enctype="multipart/form-data" method="post">
+                        <input type="hidden" name="_token" value="dYd7ElueXsCj8V2ODqfezBalqH7VBhwjBw0mVS8b">
+                        <div class="friend" style="box-shadow: 0 4px 8px 0 rgba(81, 5, 223, 0.3);padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:7px;margin-top:7px">
+                            <p><img src='' width='50px' height='50px' style='border-radius:50%;padding-bottom:20px'></p>
+                            <p style="width:50%"> Kevin Odhiambo</p>
+
+                            <button style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">
+                            <p> follow </p>
+                            </button>
+
+                        </div>
+                
+                    </form>
+
+
+
+
+
                 </div>
             </div>
 
+            
+
             <div class="box">
-                <h1 style="padding-top:20px">My followers</h1>
 
+                <button id="following1" style="margin-top:20px;width:33%;height:40px;border:1px solid black;padding:7px;font-size:17px">Following</button>
+                <button id="followers2">Followers</button>
+                <button id="blocked3">Blocked</button>
                 
-                    <div class="friend" style="box-shadow: 0 4px 8px 0 rgba(81, 5, 223, 0.3);padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:160px">
+                <div class="friendship" id="f1">
+                    <h1>Following</h1>
+                </div>
+                <div class="friendship" id="f2">
+                    <h1>Followers</h1>
+                </div>
+                <div class="friendship" id="b3">
+                    <h3>Blocked</h3>
+                </div>
 
-                       
-                            <p style="display: inline-block; width: 70px; height: 50px;">
-                                <a href="/user-profile" style="color:#333333">
-                                <i class='bx bxs-user-circle' style="font-size: 40px;"></i></a>
-                            </p>
 
-                                            
-                    <p style="width:50%">
-                        <a href="/user-profile" style="color:#66CCFF">
-                            James King
-                        </a>
-                    </p>
-                        <p style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">Friends </p>
-                    </div>
 
-                
-                    <div class="friend" style="box-shadow: 0 4px 8px 0 rgba(81, 5, 223, 0.3);padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:160px">
 
-                       
-                            <p style="display: inline-block; width: 70px; height: 50px;">
-                                <a href="/user-profile" style="color:#333333">
-                                <i class='bx bxs-user-circle' style="font-size: 40px;"></i></a>
-                            </p>
 
-                                            
-                    <p style="width:50%">
-                        <a href="/user-profile" style="color:#66CCFF">
-                            Daniel Masaba
-                        </a>
-                    </p>
-                        <p style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">Friends </p>
-                    </div>
+
+
+                <h2 style="padding-top:20px;margin-bottom:10px">My followers | Following | Friend Requests</h2>
 
                 
                        
@@ -162,22 +163,8 @@
 
                         
                         <div class="friend" style="border:1px solid black;padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:7px">
-                            <p><img src='Daniel Masaba' width='50px' height='50px' style='border-radius:50%;padding-bottom:20px'></p>
+                            <p><img src='Tonny Joel' width='50px' height='50px' style='border-radius:50%;padding-bottom:20px'></p>
                             <p style="width:50%"> James King</p>
-                            <p style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">Unfollow </p>
-                        </div>
-
-                        
-                        <div class="friend" style="border:1px solid black;padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:7px">
-                            <p><img src='Daniel Masaba' width='50px' height='50px' style='border-radius:50%;padding-bottom:20px'></p>
-                            <p style="width:50%"> Daniel Masaba</p>
-                            <p style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">Unfollow </p>
-                        </div>
-
-                        
-                        <div class="friend" style="border:1px solid black;padding:5px;display:flex;justify-content:space-around;heght:80px;align-items:center;margin-bottom:7px">
-                            <p><img src='Daniel Masaba' width='50px' height='50px' style='border-radius:50%;padding-bottom:20px'></p>
-                            <p style="width:50%"> Daniel James</p>
                             <p style="background-color:blue;color:white;border-radius:3px;padding:5px;text-align:center;height:40%">Unfollow </p>
                         </div>
 
